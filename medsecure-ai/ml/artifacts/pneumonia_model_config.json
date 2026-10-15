@@ -1,0 +1,19 @@
+{
+    "model_name": "PneumoniaCNN",
+    "checkpoint": "pneumonia_cnn_best.pt",
+    "input_shape": [
+        1,
+        28,
+        28
+    ],
+    "class_mapping": {
+        "0": "normal",
+        "1": "pneumonia"
+    },
+    "classification_threshold": 0.4,
+    "threshold_selection_split": "validation",
+    "threshold_selection_reason": "Selected to balance high pneumonia sensitivity with improved specificity on the validation set.",
+    "validation_roc_auc": 0.982747786346758,
+    "validation_average_precision": 0.9938116575748175,
+    "seed": 42
+}

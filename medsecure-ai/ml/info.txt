@@ -1,0 +1,11 @@
+### Final Test-Set Evaluation of the Pneumonia CNN
+
+The proposed convolutional neural network was evaluated on the official PneumoniaMNIST test set, consisting of 624 images: 234 normal cases and 390 pneumonia cases. The best checkpoint was selected using validation loss, and a classification threshold of 0.40 was selected using the validation set.
+
+The model achieved an accuracy of 83.01%, precision of 79.10%, sensitivity of 98.97%, specificity of 56.41%, and an F1-score of 0.8793. The ROC-AUC was 0.9543, while Average Precision was 0.9637.
+
+The confusion matrix contained 386 true positives, 132 true negatives, 102 false positives, and 4 false negatives. These results indicate that the model detected most pneumonia cases at the chosen threshold but incorrectly classified a substantial number of normal cases as pneumonia.
+
+Compared with the previously evaluated threshold of 0.50, the threshold of 0.40 increased sensitivity while reducing specificity. This illustrates the trade-off between detecting positive cases and limiting false alarms. Further analysis should investigate threshold selection on validation data and assess generalization before considering any clinical application.
+
+The system is an educational research prototype and is not intended for clinical diagnosis.
